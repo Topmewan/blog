@@ -45,12 +45,12 @@ const opt = [
 		Icon: ListAltIcon,
 	},
 	{
-		id: 6,
+		id: 7,
 		text: 'Profile',
 		Icon: PermIdentityIcon,
 	},
 	{
-		id: 7,
+		id: 8,
 		text: 'More',
 		Icon: MoreHorizIcon,
 	},
@@ -65,6 +65,7 @@ export const Sidebar = () => {
 
 	return (
 		<div className={styles.sidebar}>
+			<TwitterIcon className={styles.logo} />
 			{opt.map((option) => (
 				<SidebarOption
 					key={option?.id}

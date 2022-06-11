@@ -1,20 +1,26 @@
 .option {
-	padding: 20px;
+	padding: 10px;
 	display: flex;
 	align-items: center;
 	gap: 10px;
 	cursor: pointer;
-	transition: color 100ms ease-out;
+	transition: all 0.1s ease-out;
+	max-width: fit-content;
 
 	.icon {
-		width: 30px;
-		height: 30px;
+		width: 25px;
+		height: 25px;
 	}
 
 	h2 {
 		font-weight: 800;
 		font-size: 20px;
 		margin-right: 20px;
+		opacity: 1;
+		transition: opacity 0.1s ease;
+		@media (max-width: 768px) {
+			opacity: 0;
+		}
 	}
 
 	&:hover,
@@ -22,5 +28,8 @@
 		background-color: #e8f5fe;
 		border-radius: 30px;
 		color: #50b7f5;
+	}
+	&.active {
+		background-color: inherit;
 	}
 }

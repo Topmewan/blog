@@ -1,0 +1,23 @@
+.feed {
+	flex: 0.5;
+	border-right: 1px solid lightgray;
+	min-width: fit-content;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	.header {
+		position: sticky;
+		top: 0;
+		background-color: white;
+		z-index: 100;
+		border: 1px solid lightgray;
+		padding: 15px 20px;
+	}
+}
