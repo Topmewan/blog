@@ -1,2 +1,5 @@
 import App from './App';
-export { App };
+import Feed from './Feed';
+import Sidebar from './Sidebar';
+
+export { App, Sidebar, Feed };
